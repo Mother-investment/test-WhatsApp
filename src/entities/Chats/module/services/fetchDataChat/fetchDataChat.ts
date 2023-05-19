@@ -18,7 +18,6 @@ export const fetchDataChat = createAsyncThunk<ChatData, DataToSend, ThunkConfig<
 			if (!response.data) {
 				throw new Error('Что-то пошло не так :(')
 			}
-			console.log(response.data)
 			return {
 				tel: tel,
 				messages: response.data
