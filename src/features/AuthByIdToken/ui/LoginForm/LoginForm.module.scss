@@ -1,0 +1,26 @@
+.LoginForm {
+	display: flex;
+	flex-direction: column;
+}
+
+.title {
+	margin-bottom: 30px;
+}
+
+.input {
+	margin-bottom: 20px;
+}
+
+.errorMessage {
+	margin: 10px 0 15px;
+	color: var(--attn);
+	z-index: var(--z-hidden);
+}
+
+.errorTrue {
+	z-index: var(--z-container);
+}
+
+.link {
+	color: var(--link);
+}

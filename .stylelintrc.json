@@ -1,0 +1,22 @@
+{
+	"extends": [
+		"stylelint-config-standard-scss",
+		"stylelint-config-sass-guidelines"
+	],
+	"plugins": ["stylelint-scss", "stylelint-order"],
+	"rules": {
+		"indentation": [
+			"tab",
+			{
+				"except": ["value"]
+			}
+		],
+		"no-empty-source": null,
+		"no-missing-end-of-source-newline": null,
+		"declaration-property-value-disallowed-list": null,
+		"selector-class-pattern": null,
+		"custom-property-pattern": null,
+		"max-nesting-depth": null,
+		"property-no-vendor-prefix": null
+	}
+}

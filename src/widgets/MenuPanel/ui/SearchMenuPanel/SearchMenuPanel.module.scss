@@ -1,0 +1,22 @@
+.SearchMenuPanel {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.input {
+	height: 35px;
+	flex: 1;
+	margin: 7px 0 7px 12px;
+}
+
+.btn {
+	height: 26px;
+	width: 26px;
+	margin: 0 8px;
+	color: var(--icon-secondary);
+}
+
+.filterIcon {
+	color: var(--icon-secondary);
+}

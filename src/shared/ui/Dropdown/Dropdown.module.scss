@@ -1,0 +1,23 @@
+.Dropdown {
+	align-items: center;
+	background: var(--dropdown-background);
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	border-radius: 3px;
+	bottom: -62px;
+	right: 5px;
+	z-index: var(--z-dropdown);
+	padding: 9px 0;
+  transform-origin: top right;
+  transform: scale(0);
+  transition: transform 0.1s ease-in-out;
+}
+
+.opened {
+  transform: scale(1);
+}
+
+.isClosing {
+  transform: scale(0);
+}

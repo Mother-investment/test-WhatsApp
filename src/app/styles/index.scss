@@ -1,0 +1,29 @@
+@import 'reset';
+@import 'font';
+@import 'variables/colors';
+@import 'variables/radius';
+@import 'variables/zIndexes';
+
+.app {
+	background: var(--app-background);
+	min-height: 100vh;
+	min-width: 748px;
+}
+
+.content {
+	display: flex;
+	justify-content: center;
+	min-height: 100vh;
+}
+
+*::-webkit-scrollbar {
+	width: 6px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--scroll-track);
+}
+
+*::-webkit-scrollbar-thumb {
+	background-color: var(--scroll-thumb);
+}

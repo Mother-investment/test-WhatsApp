@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import 'variables/fonts';
+
+.app {
+	color: var(--text-primary);
+	font-family: var(--font-family-main);
+}
+
+h1 {
+	font-size: 24px;
+}
+
+h3 {
+	font-size: 17px;
+}
+
+p {
+	font-size: 14px;
+}
+
+span {
+	font-size: 11.5px;
+}

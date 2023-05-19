@@ -1,0 +1,36 @@
+.LoginPage {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	position: relative;
+	padding-bottom: 92px;
+}
+
+.before {
+	position: absolute;
+	top: 0;
+	z-index: var(--z-loginPage-before);
+	height: 222px;
+	width: 100%;
+	background-color: var(--app-background-stripe);
+}
+
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: start;
+	margin: 27px auto 28px;
+
+	&__title {
+		text-transform: uppercase;
+		color: var(--text-white);
+	}
+}
+
+.window {
+	background-color: var(--login-window-background);
+}
+
+.window__container {
+	padding: 64px 60px 60px;
+}

@@ -1,0 +1,67 @@
+.Button {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: var(--button-text);
+	fill: var(--button-text);
+	cursor: pointer;
+	padding: 10px 25px;
+	border-radius: var(--r-button);
+	background-color: var(--button-background);
+}
+
+.clear {
+	background: none;
+	color: var(--icon-primary);
+	fill: var(--icon-primary);
+	border: none;
+	border-radius: 0;
+	outline: none;
+	padding: 0;
+
+	&:hover {
+		background: none;
+		border: none;
+		border-radius: 0;
+		color: var(--icon-primary);
+		fill: var(--icon-primary);
+	}
+}
+
+.btnContainer {
+	height: 100%;
+	width: 100%;
+	border-radius: 50px;
+	display: flex;
+	justify-content: center;
+	background-color: transparent;
+	align-items: center;
+}
+
+.active {
+	.primary {
+		background-color: var(--button-active-background-primary);
+	}
+
+	.green {
+		background-color: var(--button-active-background-green);
+		color: var(--button-active-color-green);
+	}
+}
+
+.buttonLoader {
+	opacity: 0;
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%);
+}
+
+.loading {
+	color: var(--button-background);
+	.buttonLoader {
+		color: var(--button-text);
+		opacity: 1;
+	}
+}

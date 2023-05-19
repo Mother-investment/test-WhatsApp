@@ -1,0 +1,39 @@
+.HeaderMenuPanel {
+	display: flex;
+	justify-content: space-between;
+	height: 59px;
+	background-color: var(--header-background);
+	padding: 10px 16px;
+}
+
+.menuBar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	&__item {
+		position: relative;
+	}
+	&__btn {
+		height: 40px;
+		width: 40px;
+		color: var(--headerMenuPanel-icon);
+	}
+}
+
+.settings {
+	&__list {
+	}
+	&__item {
+		color: var(--text-primary);
+	}
+	&__btn {
+		height: 40px;
+		padding-right: 58px;
+    padding-left: 24px;
+
+		&:hover {
+			background-color: var(--dropdown-background-hover);
+		}
+	}
+}

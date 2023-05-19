@@ -1,0 +1,43 @@
+.MessageItem {
+	display: flex;
+	padding: 0 63px;
+	margin-bottom: 2px;
+}
+
+.main {
+	display: flex;
+	position: relative;
+	border-radius: 7.5px;
+}
+
+.time {
+	position: absolute;
+	bottom: 6px;
+	right: 7px;
+}
+
+.outgoing {
+	justify-content: flex-end;
+
+	.main {
+		background-color: var(--messageItem-outgoing-background);
+		padding: 6px 7px 8px 9px;
+		border-top-right-radius: 0
+	}
+	.indent {
+		width: 53px;
+	}
+}
+
+.incoming {
+	justify-content: flex-start;
+
+	.main {
+		background-color: var(--messageItem-incoming-background);
+		padding: 6px 7px 8px 9px;
+		border-top-left-radius: 0
+	}
+	.indent {
+		width: 35px;
+	}
+}

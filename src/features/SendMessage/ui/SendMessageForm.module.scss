@@ -1,0 +1,19 @@
+.SendMessageForm {
+	display: flex;
+	padding: 5px 16px;
+	justify-content: space-between;
+}
+
+.btn {
+	margin: 0 8px;
+}
+
+.icon {
+	color: var(--icon-secondary);
+}
+
+.input {
+	font-size: 15px;
+	flex: 1;
+	margin: 5px 8px;
+}
