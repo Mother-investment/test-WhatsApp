@@ -13,7 +13,7 @@ const LoginPage = () => {
 			<Container maxWidth='1000px' className={cls.container}>
 				<header className={cls.header}>
 					<span className={cls.header__logo}><WhatsappLogo /></span>
-					<h3 className={cls.header__title}>WhatsApp Web</h3>
+					<h3 className={cls.header__title}> WhatsApp Web</h3>
 				</header>
 				<section className={cls.window}>
 					<div className={cls.window__container}>

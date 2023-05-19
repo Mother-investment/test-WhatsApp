@@ -68,7 +68,7 @@ export const LoginForm = memo((props: LoginFormProps) => {
 				{errorMessage || 'Тут могла быть ваша ошибка'}
 			</p>
 
-			<h3>
+			<h3 className={cls.instruction}>
 				Чтобы получить idInstance и apiTokenInstance воспользуйтесь
 				<Link
 					className={cls.link}
