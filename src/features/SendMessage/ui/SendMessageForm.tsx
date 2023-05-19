@@ -5,7 +5,7 @@ import AttachIcon from 'shared/assets/icons/attachIcon.svg'
 import SendMessageIcon from 'shared/assets/icons/sendMessageIcon.svg'
 import { Input } from 'shared/ui/Input/Input'
 import { Button } from 'shared/ui/Button/Button'
-import { useCallback, useState } from 'react'
+import { useCallback, useEffect, useState } from 'react'
 import { useAppDispatch } from 'shared/lib/hooks/useAppDispatch/useAppDispatch'
 import { useSelector } from 'react-redux'
 import { getAuthData } from 'features/AuthByIdToken'
@@ -36,6 +36,20 @@ export const SendMessageForm = (props: SendMessageFormProps) => {
 			}
 		}
 	},[authData, dispatch, messageValue, openedChatTel])
+
+
+	const onkeydownHandler = useCallback((e:KeyboardEvent) => {
+		if(e.key === 'Enter'){
+			clickSendMessage()
+		}
+	}, [clickSendMessage])
+
+	useEffect(() => {
+		window.addEventListener('keydown', onkeydownHandler)
+		return () => {
+			window.removeEventListener('keydown', onkeydownHandler)
+		}
+	}, [onkeydownHandler])
 
 	return (
 		<div className={classNames(cls.SendMessageForm, {}, [className])}>
